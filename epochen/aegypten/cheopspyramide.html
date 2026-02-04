@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheopspyramide – Altes Ägypten</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f1ec;
+    }
+
+    header {
+      background: #c9a227;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-family: "Comic Neue", cursive;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .info {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      color: #444;
+    }
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 18s infinite;
+    }
+
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+      text-align: center;
+      background: white;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .caption {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @keyframes slide {
+      0%   { transform: translateX(0); }
+      33%  { transform: translateX(0); }
+      38%  { transform: translateX(-100%); }
+      66%  { transform: translateX(-100%); }
+      71%  { transform: translateX(-200%); }
+      100% { transform: translateX(-200%); }
+    }
+
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 1.2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-family: "Comic Neue", cursive;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      background: #c9a227;
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Cheopspyramide</h1>
+  <p>Das größte Bauwerk des Alten Ägypten</p>
+</header>
+
+<main>
+
+  <div class="info">
+    Altes Ägypten · ca. 2600 v. Chr. · Gizeh, Ägypten
+  </div>
+
+  <!-- Bild-Slider -->
+  <div class="slider">
+    <div class="slides">
+
+      <div class="slide">
+        <img src="../../bilder/monumente/cheopspyramide/cheopspyramide_01.jpg" alt="Pyramiden von Gizeh">
+        <div class="caption">
+          Die bekanntesten Pyramiden der Welt sind die Pyramiden von Gizeh. Die größte der drei Grabstätten ist die Cheopspyramide.
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="../../bilder/monumente/cheopspyramide/cheopspyramide_02.jpg" alt="Innere Kammer der Pyramide">
+        <div class="caption">
+          Erst 2023 wurde im Inneren der Pyramide eine neue Kammer entdeckt.
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="../../bilder/monumente/cheopspyramide/cheopspyramide_03.jpg" alt="Größe der Cheopspyramide">
+        <div class="caption">
+          Aus der Nähe lässt sich die gewaltige Größe der Pyramide erst richtig erahnen.
+        </div>

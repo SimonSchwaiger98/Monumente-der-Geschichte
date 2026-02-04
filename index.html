@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monumente der Geschichte entdecken</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("bilder/hintergrund_geschichte.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    header {
+      background: rgba(55, 71, 79, 0.9);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-family: "Comic Neue", cursive;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-family: "Comic Neue", cursive;
+    }
+
+    h2 {
+      margin: 2rem 1rem 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      color: white;
+      font-family: "Comic Neue", cursive;
+    }
+
+    .steinzeit { background: #8d6e63; }
+    .aegypten { background: #c9a227; }
+    .antike { background: #607d8b; }
+    .mittelalter { background: #6d4c41; }
+    .neuzeit { background: #455a64; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      text-align: center;
+      padding: 1rem;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card-title {
+      margin-top: 0.5rem;
+      font-weight: bold;
+      font-family: "Comic Neue", cursive;
+    }
+
+    .info {
+      font-size: 0.9rem;
+      color: #555;
+      font-style: italic;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Monumente der Geschichte entdecken</h1>
+  <p>Klicke auf ein Bauwerk und reise durch die Zeit!</p>
+</header>
+
+<main>
+
+  <!-- Steinzeit -->
+  <h2 class="steinzeit">🪨 Steinzeit</h2>
+  <div class="grid">
+    <a href="epochen/steinzeit/stonehenge.html" class="card">
+      <img src="bilder/stonehenge.jpg" alt="Stonehenge">
+      <div class="card-title">Stonehenge</div>
+      <div class="info">ca. 3000 v. Chr. · England</div>
+    </a>
+  </div>
+
+  <!-- Altes Ägypten -->
+  <h2 class="aegypten">🏺 Altes Ägypten</h2>
+  <div class="grid">
+    <a href="epochen/aegypten/cheopspyramide.html" class="card">
+      <img src="bilder/cheopspyramide.jpg" alt="Cheopspyramide">
+      <div class="card-title">Cheopspyramide</div>
+      <div class="info">ca. 2600 v. Chr. · Gizeh</div>
+    </a>
+
+    <a href="epochen/aegypten/tutanchamun.html" class="card">
+      <img src="bilder/tutanchamun.jpg" alt="Grab des Tutanchamun">
+      <div class="card-title">Grab des Tutanchamun</div>
+      <div class="info">ca. 1323 v. Chr. · Tal der Könige</div>
+    </a>
+
+    <a href="epochen/aegypten/karnak.html" class="card">
+      <img src="bilder/karnak.jpg" alt="Tempel von Karnak">
+      <div class="card-title">Tempel von Karnak</div>
+      <div class="info">ab ca. 2000 v. Chr. · Luxor</div>
+    </a>
+  </div>
+
+  <!-- Antike -->
+  <h2 class="antike">🏛 Antike</h2>
+  <div class="grid">
+    <a href="epochen/antike/kolosseum.html" class="card">
+      <img src="bilder/kolosseum.jpg" alt="Kolosseum">
+      <div class="card-title">Kolosseum</div>
+      <div class="info">80 n. Chr. · Rom</div>
+    </a>
+
+    <a href="epochen/antike/akropolis.html" class="card">
+      <img src="bilder/akropolis.jpg" alt="Akropolis">
+      <div class="card-title">Akropolis</div>
+      <div class="info">5. Jh. v. Chr. · Athen</div>
+    </a>
+
+    <a href="epochen/antike/hagiasophia.html" class="card">
+      <img src="bilder/hagiasophia.jpg" alt="Hagia Sophia">
+      <div class="card-title">Hagia Sophia</div>
+      <div class="info">537 n. Chr. · Istanbul</div>
+    </a>
+  </div>
+
+  <!-- Mittelalter -->
+  <h2 class="mittelalter">🏰 Mittelalter</h2>
+  <div class="grid">
+    <a href="epochen/mittelalter/notredame.html" class="card">
+      <img src="bilder/notredame.jpg" alt="Notre-Dame de Paris">
+      <div class="card-title">Notre-Dame de Paris</div>
+      <div class="info">ab 1163 · Paris</div>
+    </a>
+
+    <a href="epochen/mittelalter/tower.html" class="card">
+      <img src="bilder/tower.jpg" alt="Tower of London">
+      <div class="card-title">Tower of London</div>
+      <div class="info">ab 1078 · London</div>
+    </a>
+
+    <a href="epochen/mittelalter/alhambra.html" class="card">
+      <img src="bilder/alhambra.jpg" alt="Alhambra">
+      <div class="card-title">Alhambra</div>
+      <div class="info">13.–15. Jh. · Granada</div>
+    </a>
+  </div>
+
+  <!-- Neuzeit -->
+  <h2 class="neuzeit">🗼 Neuzeit</h2>
+  <div class="grid">
+    <a href="epochen/neuzeit/versailles.html" class="card">
+      <img src="bilder/versailles.jpg" alt="Schloss Versailles">
+      <div class="card-title">Schloss Versailles</div>
+      <div class="info">17. Jh. · Frankreich</div>
+    </a>
+
+    <a href="epochen/neuzeit/eiffelturm.html" class="card">
+      <img src="bilder/eiffelturm.jpg" alt="Eiffelturm">
+      <div class="card-title">Eiffelturm</div>
+      <div class="info">1889 · Paris</div>
+    </a>
+
+    <a href="epochen/neuzeit/empirestate.html" class="card">
+      <img src="bilder/empirestate.jpg" alt="Empire State Building">
+      <div class="card-title">Empire State Building</div>
+      <div class="info">1931 · New York</div>
+    </a>
+  </div>
+
+</main>
+
+</body>
+</html>

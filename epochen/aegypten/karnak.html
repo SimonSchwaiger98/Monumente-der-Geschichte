@@ -9,102 +9,108 @@
 
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f1ec;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
     }
 
     header {
       background: #c9a227;
       color: white;
       text-align: center;
-      padding: 1.5rem 1rem;
+      padding: 1.5rem;
       font-family: "Comic Neue", cursive;
     }
 
     main {
       max-width: 900px;
       margin: 0 auto;
+      padding: 1.5rem;
+      background: white;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .info-box {
+      background: #f6f0d8;
       padding: 1rem;
-    }
-
-    .info {
-      text-align: center;
-      font-style: italic;
+      border-radius: 8px;
       margin-bottom: 1.5rem;
-      color: #444;
+      font-style: italic;
     }
 
+    /* Slider */
     .slider {
       position: relative;
-      overflow: hidden;
-      border-radius: 12px;
       margin-bottom: 1.5rem;
-    }
-
-    .slides {
-      display: flex;
-      width: 300%;
-      animation: slide 18s infinite;
     }
 
     .slide {
-      width: 100%;
-      flex-shrink: 0;
+      display: none;
       text-align: center;
-      background: white;
     }
 
     .slide img {
       width: 100%;
-      height: 320px;
-      object-fit: cover;
+      border-radius: 8px;
     }
 
     .caption {
-      padding: 0.5rem;
+      margin-top: 0.5rem;
       font-size: 0.9rem;
       color: #555;
     }
 
-    @keyframes slide {
-      0%   { transform: translateX(0); }
-      33%  { transform: translateX(0); }
-      38%  { transform: translateX(-100%); }
-      66%  { transform: translateX(-100%); }
-      71%  { transform: translateX(-200%); }
-      100% { transform: translateX(-200%); }
+    .slide.active {
+      display: block;
     }
 
-    section {
-      background: white;
-      border-radius: 12px;
-      padding: 1.2rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    .slider-buttons {
+      text-align: center;
+      margin-top: 0.5rem;
     }
 
-    section h2 {
-      margin-top: 0;
-      font-family: "Comic Neue", cursive;
-    }
-
-    iframe {
-      width: 100%;
-      height: 350px;
+    .slider-buttons button {
+      background: #c9a227;
+      color: white;
       border: none;
-      border-radius: 12px;
+      padding: 0.4rem 0.8rem;
+      margin: 0 0.2rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .slider-buttons button:hover {
+      background: #a98a1f;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .map {
+      margin-top: 2rem;
     }
 
     .back {
-      display: inline-block;
-      margin-top: 1rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .back a {
       text-decoration: none;
       background: #c9a227;
       color: white;
-      padding: 0.6rem 1rem;
+      padding: 0.6rem 1.2rem;
       border-radius: 8px;
-      font-weight: bold;
+      font-family: "Comic Neue", cursive;
     }
   </style>
 </head>
@@ -113,109 +119,120 @@
 
 <header>
   <h1>Tempel von Karnak</h1>
-  <p>Eine riesige Tempelanlage im Alten Ägypten</p>
+  <p>Altes Ägypten · ca. 2000 v. Chr. · Luxor, Ägypten</p>
 </header>
 
 <main>
 
-  <div class="info">
-    Altes Ägypten · ca. 2000 v. Chr. · Luxor, Ägypten
+  <div class="info-box">
+    Epoche: Altes Ägypten <br>
+    Bauzeit: ca. 2000 v. Chr. <br>
+    Ort: Luxor, Ägypten
   </div>
 
   <!-- Bild-Slider -->
   <div class="slider">
-    <div class="slides">
 
-      <div class="slide">
-        <img src="../../bilder/monumente/karnak/karnak_01.jpg" alt="Tempelanlage von Karnak">
-        <div class="caption">
-          Die weitläufige Tempelanlage wurde über viele Jahrhunderte durch unterschiedliche Herrscher erweitert und umgebaut.
-        </div>
+    <div class="slide active">
+      <img src="../../bilder/monumente/karnak/karnak_01.jpg" alt="Tempelanlage von Karnak">
+      <div class="caption">
+        Die weitläufige Tempelanlage wurde über viele Jahrhunderte durch unterschiedliche Herrscher erweitert und umgebaut.
       </div>
+    </div>
 
-      <div class="slide">
-        <img src="../../bilder/monumente/karnak/karnak_02.jpg" alt="Säulenhalle von Karnak">
-        <div class="caption">
-          Die Tempelanlage ist besonders berühmt für ihre beeindruckende Säulenhalle, die mit zahlreichen Hieroglyphen verziert ist.
-        </div>
+    <div class="slide">
+      <img src="../../bilder/monumente/karnak/karnak_02.jpg" alt="Säulenhalle im Tempel von Karnak">
+      <div class="caption">
+        Die Tempelanlage ist besonders berühmt für ihre beeindruckende Säulenhalle mit zahlreichen Hieroglyphen.
       </div>
+    </div>
 
-      <div class="slide">
-        <img src="../../bilder/monumente/karnak/karnak_03.jpg" alt="Hieroglyphen im Tempel von Karnak">
-        <div class="caption">
-          Hieroglyphen zeigen Thutmosis III. (links) und Hatschepsut (rechts) in der Tempelanlage von Karnak.
-        </div>
+    <div class="slide">
+      <img src="../../bilder/monumente/karnak/karnak_03.jpg" alt="Hieroglyphen im Tempel von Karnak">
+      <div class="caption">
+        Hieroglyphen zeigen Thutmosis III. (links) und Hatschepsut (rechts) in der Tempelanlage von Karnak.
       </div>
+    </div>
 
+    <div class="slider-buttons">
+      <button onclick="showSlide(0)">●</button>
+      <button onclick="showSlide(1)">●</button>
+      <button onclick="showSlide(2)">●</button>
     </div>
   </div>
 
-  <!-- Textabschnitte -->
-  <section>
-    <h2>1. Was ist der Tempel von Karnak und wo liegt er?</h2>
-    <p>
-      Der Tempel von Karnak ist eine der größten Tempelanlagen der Welt. Er besteht nicht aus nur einem Gebäude,
-      sondern aus vielen Tempeln, Hallen, Höfen und Türmen. Der Tempel von Karnak liegt in Ägypten,
-      in der heutigen Stadt Luxor, am Ostufer des Nils.
-    </p>
-    <p>
-      Die gesamte Anlage ist riesig: Sie erstreckt sich über eine Fläche von mehr als 30 Hektar –
-      das ist ungefähr so groß wie 40 Fußballfelder. Besonders beeindruckend ist die sogenannte Säulenhalle,
-      in der 134 gewaltige Steinsäulen stehen.
-    </p>
-  </section>
+  <!-- Text -->
+  <h2>1. Was ist der Tempel von Karnak und wo liegt er?</h2>
+  <p>
+    Der Tempel von Karnak ist eine der größten Tempelanlagen der Welt. Er besteht nicht aus nur einem Gebäude,
+    sondern aus vielen Tempeln, Hallen, Höfen und Türmen. Er liegt in Ägypten, in der heutigen Stadt Luxor,
+    am Ostufer des Nils.
+  </p>
+  <p>
+    Die gesamte Anlage ist riesig: Sie erstreckt sich über mehr als 30 Hektar – ungefähr so groß wie
+    40 Fußballfelder. Besonders beeindruckend ist die große Säulenhalle mit 134 gewaltigen Steinsäulen,
+    von denen einige über 20 Meter hoch sind.
+  </p>
 
-  <section>
-    <h2>2. Epoche, Bauzeit und Erbauer</h2>
-    <p>
-      Der Tempel von Karnak gehört zur Epoche des Alten Ägypten und zur Antike.
-      Mit dem Bau wurde bereits um 2000 v. Chr. begonnen.
-      Über einen Zeitraum von fast 2000 Jahren wurde die Anlage immer weiter vergrößert und umgebaut.
-    </p>
-    <p>
-      Viele berühmte Pharaonen ließen Teile des Tempels errichten, darunter Sesostris I.,
-      Hatschepsut, Thutmosis III. und Ramses II.
-    </p>
-  </section>
+  <h2>2. Epoche, Bauzeit und Erbauer</h2>
+  <p>
+    Der Tempel von Karnak gehört zur Epoche des Alten Ägypten und zur Antike.
+    Mit dem Bau wurde bereits um 2000 v. Chr. begonnen.
+    Über fast 2000 Jahre hinweg wurde die Anlage immer weiter vergrößert und umgebaut.
+  </p>
+  <p>
+    Viele berühmte Pharaonen ließen Teile des Tempels errichten, darunter Sesostris I.,
+    Hatschepsut, Thutmosis III. und Ramses II.
+  </p>
 
-  <section>
-    <h2>3. Nutzung und Bedeutung früher und heute</h2>
-    <p>
-      Der Tempel von Karnak war vor allem ein Tempel für den Gott Amun, den wichtigsten Gott der Stadt Theben.
-      Hier beteten Priester, brachten Opfer dar und feierten große religiöse Feste,
-      darunter das jährliche Opet-Fest.
-    </p>
-    <p>
-      Heute ist der Tempel von Karnak ein archäologisches Denkmal
-      und eine der wichtigsten Sehenswürdigkeiten Ägyptens.
-    </p>
-  </section>
+  <h2>3. Nutzung und Bedeutung früher und heute</h2>
+  <p>
+    Der Tempel von Karnak war vor allem ein Tempel für den Gott Amun,
+    den wichtigsten Gott der Stadt Theben.
+    Hier fanden religiöse Feste, Opferzeremonien und Prozessionen statt.
+  </p>
+  <p>
+    Heute ist der Tempel von Karnak eine der wichtigsten Sehenswürdigkeiten Ägyptens
+    und ein bedeutendes archäologisches Denkmal.
+  </p>
 
-  <section>
-    <h2>4. Spannende Besonderheiten und Funde</h2>
-    <p>
-      Besonders bekannt ist die Große Säulenhalle mit ihren dicht stehenden Säulen,
-      die mit Bildern und Hieroglyphen bedeckt sind.
-      Außerdem standen im Tempel von Karnak mehrere hohe Obelisken.
-    </p>
-    <p>
-      Die zahlreichen Reliefs an den Wänden zeigen Götter, Pharaonen,
-      Schlachten und Opfergaben und helfen Forschern,
-      viel über das Leben und den Glauben im Alten Ägypten zu lernen.
-    </p>
-  </section>
+  <h2>4. Spannende Besonderheiten und Funde</h2>
+  <p>
+    Besonders bekannt ist die Große Säulenhalle mit ihren dicht stehenden Säulen,
+    die mit Bildern und Hieroglyphen bedeckt sind.
+    Außerdem standen in der Tempelanlage mehrere hohe Obelisken.
+  </p>
+  <p>
+    Die zahlreichen Reliefs an den Wänden zeigen Götter, Pharaonen,
+    Schlachten und Opfergaben und helfen Forschern,
+    viel über das Leben und den Glauben im Alten Ägypten zu lernen.
+  </p>
 
   <!-- Karte -->
-  <section>
-    <h2>Lage des Tempels von Karnak</h2>
+  <div class="map">
+    <h2>📍 Lage des Tempels von Karnak</h2>
     <iframe
-      src="https://www.openstreetmap.org/export/embed.html?bbox=32.655%2C25.714%2C32.665%2C25.724&layer=mapnik&marker=25.7188%2C32.6573">
+      src="https://www.openstreetmap.org/export/embed.html?bbox=32.655%2C25.714%2C32.665%2C25.724&layer=mapnik"
+      width="100%"
+      height="300"
+      style="border:1px solid #ccc;"
+      loading="lazy">
     </iframe>
-  </section>
+  </div>
 
-  <a href="../../index.html" class="back">← Zurück zur Übersicht</a>
+  <div class="back">
+    <a href="../../index.html">← Zurück zur Übersicht</a>
+  </div>
 
 </main>
+
+<script>
+  function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+</script>
 
 </body>
 </html>

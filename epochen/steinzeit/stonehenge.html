@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stonehenge – Steinzeit</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+    }
+
+    header {
+      background: #8d6e63;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-family: "Comic Neue", cursive;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background: white;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .info-box {
+      background: #efebe9;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    /* Slider */
+    .slider {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .slide {
+      display: none;
+      text-align: center;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slider-buttons {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .slider-buttons button {
+      background: #8d6e63;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      margin: 0 0.2rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .slider-buttons button:hover {
+      background: #6d4c41;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .map {
+      margin-top: 2rem;
+    }
+
+    .back {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .back a {
+      text-decoration: none;
+      background: #8d6e63;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-family: "Comic Neue", cursive;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Stonehenge</h1>
+  <p>Steinzeit · ca. 3000 v. Chr. · Salisbury, England</p>
+</header>
+
+<main>
+
+  <div class="info-box">
+    Epoche: Steinzeit (Jungsteinzeit) <br>
+    Bauzeit: ab ca. 3000 v. Chr. <br>
+    Ort: Salisbury Plain, England
+  </div>
+
+  <!-- Bild-Slider -->
+  <div class="slider">
+
+    <div class="slide active">
+      <img src="../../bilder/monumente/stonehenge/stonehenge_01.jpg" alt="Stonehenge auf der Ebene">
+      <div class="caption">
+        Der Steinkreis liegt auf einer Ebene bei Salisbury in Südengland.
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/stonehenge/stonehenge_02.jpg" alt="Sommersonnwende in Stonehenge">
+      <div class="caption">
+        Auch heute feiern Druiden und Schamanen noch die Sommersonnwende in Stonehenge.
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/stonehenge/stonehenge_03.jpg" alt="Besucherzentrum Stonehenge">
+      <div class="caption">
+        Im Besucherzentrum erfährt man mehr über das Leben der Menschen, die Stonehenge errichteten.
+      </div>
+    </div>
+
+    <div class="slider-buttons">
+      <button onclick="showSlide(0)">●</button>
+      <button onclick="showSlide(1)">●</button>
+      <button onclick="showSlide(2)">●</button>
+    </div>
+  </div>
+
+  <!-- Text -->
+  <h2>Was ist Stonehenge?</h2>
+  <p>
+    Stonehenge ist ein berühmter Steinkreis aus der Steinzeit. Er liegt im Süden von England,
+    in der Landschaft Salisbury Plain in der Grafschaft Wiltshire. Die nächste größere Stadt
+    heißt Salisbury. Stonehenge steht auf einer weiten, offenen Ebene ohne hohe Berge oder Wälder,
+    sodass man das Bauwerk schon von Weitem sehen kann.
+  </p>
+
+  <p>
+    Der Steinkreis besteht aus großen, aufrecht stehenden Steinen, auf denen teilweise waagerechte
+    Steine liegen. Manche dieser Steine bilden zusammen sogenannte Steintore. Ursprünglich bestand
+    der äußere Kreis aus 30 großen Steinen. Die größten Steine sind etwa 6,5 Meter hoch und wiegen
+    bis zu 30 Tonnen – das ist so schwer wie mehrere Elefanten zusammen.
+  </p>
+
+  <p>
+    Heute liegt Stonehenge geschützt in einer großen Grünfläche und darf nicht mehr betreten werden,
+    damit die alten Steine erhalten bleiben.
+  </p>
+
+  <h2>Epoche und Bauzeit</h2>
+  <p>
+    Stonehenge stammt aus der Steinzeit, genauer aus der Jungsteinzeit (Neolithikum). Der Bau begann
+    vor etwa 5000 Jahren, also ungefähr 3000 v. Chr., und dauerte mit mehreren Umbauphasen viele
+    Jahrhunderte.
+  </p>
+
+  <p>
+    Zuerst wurden ein runder Graben und ein Erdwall angelegt. Etwa 500 Jahre später stellten die
+    Menschen die großen Steine auf. Gebaut wurde Stonehenge von steinzeitlichen Bauern und
+    Handwerkern. Metall kannten sie noch nicht, deshalb nutzten sie Steinwerkzeuge, Geweihhacken
+    und Holz.
+  </p>
+
+  <p>
+    Die großen Steine wurden über weite Strecken herangeschafft. Die Sarsensteine kamen aus einer
+    Region rund 30 Kilometer entfernt, die kleineren Blausteine sogar aus Wales – über 200 Kilometer
+    weit. Wie die Menschen das geschafft haben, ist bis heute beeindruckend.
+  </p>
+
+  <h2>Wozu wurde Stonehenge genutzt?</h2>
+  <p>
+    Stonehenge hatte keinen einzigen Zweck, sondern mehrere Bedeutungen. Zunächst war es ein
+    Begräbnisplatz. Archäologen fanden verbrannte Knochen von vielen Menschen. Später wurde der Ort
+    wahrscheinlich für Zeremonien genutzt.
+  </p>
+
+  <p>
+    Besonders wichtig waren die Sonnenwenden. Zur Sommersonnenwende geht die Sonne genau über einem
+    bestimmten Stein auf, zur Wintersonnenwende zwischen zwei anderen unter. Das zeigt, dass
+    Stonehenge auch eine Art Sonnenkalender war.
+  </p>
+
+  <h2>Spannende Fakten und Funde</h2>
+  <p>
+    Rund um Stonehenge wurden viele Gegenstände gefunden, darunter Steinäxte, Pfeilspitzen und
+    Keramik. Besonders bekannt ist der sogenannte „Bogenschütze von Stonehenge“, der mit
+    Pfeilspitzen und einem Armschutz begraben wurde.
+  </p>
+
+  <p>
+    Manche Forscher glauben, dass Stonehenge auch ein Heilort war, weil man den Blausteinen besondere
+    Kräfte zuschrieb. Bis heute gibt Stonehenge viele Rätsel auf – und genau das macht es so spannend.
+  </p>
+
+  <!-- Karte -->
+  <div class="map">
+    <h2>📍 Lage von Stonehenge</h2>
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-1.829%2C51.176%2C-1.823%2C51.181&layer=mapnik"
+      width="100%"
+      height="300"
+      style="border:1px solid #ccc;"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="back">
+    <a href="../../index.html">← Zurück zur Übersicht</a>
+  </div>
+
+</main>
+
+<script>
+  function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+</script>
+
+</body>
+</html>

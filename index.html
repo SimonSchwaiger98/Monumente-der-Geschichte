@@ -55,6 +55,13 @@
       gap: 1rem;
       padding: 1rem;
     }
+    .grid-steinzeit {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-steinzeit .card {
+  grid-column: 2 / 3;
+}
 
     .card {
       background: rgba(255, 255, 255, 0.9);
@@ -106,7 +113,7 @@
 
   <!-- Steinzeit -->
   <h2 class="steinzeit">⛰️ Steinzeit</h2>
-  <div class="grid">
+  <div class="grid grid-steinzeit">
     <a href="epochen/steinzeit/stonehenge.html" class="card">
       <img src="bilder/start/steinzeit/stonehenge.jpg" alt="Stonehenge">
       <div class="card-title">Stonehenge</div>
@@ -207,4 +214,5 @@
 </body>
 
 </html>
+
 

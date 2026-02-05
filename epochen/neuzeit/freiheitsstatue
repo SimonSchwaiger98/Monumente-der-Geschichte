@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freiheitsstatue – Neuzeit</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+    }
+
+    header {
+      background: #455a64;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-family: "Comic Neue", cursive;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background: white;
+    }
+
+    .info-box {
+      background: #e3eaed;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    /* Slider */
+    .slider {
+      margin-bottom: 1.5rem;
+    }
+
+    .slide {
+      display: none;
+      text-align: center;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .slider-buttons {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .slider-buttons button {
+      background: #455a64;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      margin: 0 0.2rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .map {
+      margin-top: 2rem;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      height: 650px;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-top: 1.5rem;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .back {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .back a {
+      text-decoration: none;
+      background: #455a64;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-family: "Comic Neue", cursive;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Freiheitsstatue</h1>
+  <p>Neuzeit · 1886 n. Chr. · New York City, USA</p>
+</header>
+
+<main>
+
+  <div class="info-box">
+    Epoche: Neuzeit <br>
+    Baujahr: 1886 n. Chr. <br>
+    Ort: New York City, USA
+  </div>
+
+  <!-- Bild-Slider -->
+  <div class="slider">
+
+    <div class="slide active">
+      <img src="../../bilder/monumente/freiheitsstatue/freiheitsstatue_01.jpg" alt="Freiheitsstatue auf Liberty Island">
+      <div class="caption">
+        Die Freiheitsstatue steht auf einer eigenen Insel mit dem Namen Liberty Island.
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/freiheitsstatue/freiheitsstatue_02.jpg" alt="Fackel der Freiheitsstatue">
+      <div class="caption">
+        Die Fackel der Statue ist mit Blattgold überzogen, damit sie in der Sonne glänzt.
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/freiheitsstatue/freiheitsstatue_03.jpg" alt="Freiheitsstatue in Paris">
+      <div class="caption">
+        Auf dieser Fotografie kann man die Statue kurz vor ihrer Fertigstellung in Paris sehen.
+      </div>
+    </div>
+
+    <div class="slider-buttons">
+      <button onclick="showSlide(0)">●</button>
+      <button onclick="showSlide(1)">●</button>
+      <button onclick="showSlide(2)">●</button>
+    </div>
+
+  </div>
+
+  <!-- Text -->
+  <h2>1. Name, Art des Bauwerks, Größe und Lage</h2>
+  <p>
+    Die Freiheitsstatue heißt auf Englisch Statue of Liberty. Sie ist eine riesige Statue
+    und eines der bekanntesten Wahrzeichen der Welt. Die Freiheitsstatue stellt eine Frau dar,
+    die eine Fackel in der rechten Hand und eine Steintafel in der linken Hand hält.
+  </p>
+
+  <p>
+    Die Statue ist etwa 46 Meter hoch. Rechnet man den Sockel mit dazu, ist sie sogar rund 93 Meter hoch.
+    Die Freiheitsstatue steht auf einer kleinen Insel namens Liberty Island im Hafen von New York in den USA.
+    Von dort aus ist sie schon von Weitem sichtbar und begrüßt Schiffe, die in den Hafen einfahren.
+  </p>
+
+  <h2>2. Epoche, Bauzeit und Erbauer</h2>
+  <p>
+    Die Freiheitsstatue gehört zur Epoche der Neuzeit. Sie wurde im 19. Jahrhundert gebaut.
+    Entworfen wurde sie vom französischen Bildhauer Frédéric Auguste Bartholdi.
+    An der Konstruktion im Inneren arbeitete auch der Ingenieur Gustave Eiffel,
+    der später den Eiffelturm baute.
+  </p>
+
+  <p>
+    Der Bau der Statue dauerte mehr als 20 Jahre. Sie wurde in Frankreich hergestellt
+    und in Einzelteilen per Schiff in die USA gebracht. Am 17. Juni 1885 kam die Freiheitsstatue
+    im Hafen von New York an. Ein Jahr später, am 28. Oktober 1886, wurde sie feierlich eingeweiht.
+  </p>
+
+  <p>
+    Die Statue war ein Geschenk des französischen Volkes an die Vereinigten Staaten
+    zum 100. Jahrestag der Unabhängigkeitserklärung von 1776.
+  </p>
+
+  <h2>3. Nutzung und Bedeutung früher und heute</h2>
+  <p>
+    Die Freiheitsstatue hatte von Anfang an eine symbolische Bedeutung.
+    Sie steht für Freiheit, Demokratie und Hoffnung.
+    Besonders für Einwanderer, die aus Europa nach Amerika kamen,
+    war sie ein wichtiges Zeichen.
+  </p>
+
+  <p>
+    Die Statue wurde nie als Wohn- oder Nutzgebäude verwendet,
+    sondern war immer ein Denkmal.
+    Schon 1924 wurde sie zum nationalen Monument der USA erklärt.
+  </p>
+
+  <p>
+    Heute ist die Freiheitsstatue eine der bekanntesten Sehenswürdigkeiten der Welt.
+    Millionen Menschen besuchen sie jedes Jahr.
+    Sie ist nicht nur ein Symbol für die USA,
+    sondern auch für die Idee von Freiheit weltweit.
+  </p>
+
+  <h2>4. Spannende Fakten und besondere Merkmale</h2>
+  <p>
+    Die Freiheitsstatue besteht aus einem Eisengerüst,
+    das mit Kupferplatten verkleidet ist.
+    Früher war sie deshalb kupferfarben,
+    doch durch Wind und Wetter wurde sie mit der Zeit grün.
+  </p>
+
+  <p>
+    In der Krone der Statue gibt es Fenster,
+    durch die Besucher hinausschauen können.
+    Die sieben Zacken der Krone stehen für die sieben Kontinente und sieben Meere.
+    Auf der Steintafel in ihrer linken Hand steht das Datum der amerikanischen Unabhängigkeit:
+    4. Juli 1776.
+  </p>
+
+  <p>
+    Die Freiheitsstatue zeigt, wie wichtig Freiheit und Rechte für Menschen sind –
+    und warum dieses Bauwerk bis heute eine so große Bedeutung hat.
+  </p>
+
+  <!-- Video -->
+  <h2>🎥 Video: Die Freiheitsstatue</h2>
+
+  <div class="video-wrapper">
+    <iframe
+      src="https://schule.zdf.de/video/welche-farbe-hatte-die-new-yorker-freiheitsstatue-urspruenglich-creative-commons-clip-100"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="back">
+    <a href="../../index.html">← Zurück zur Übersicht</a>
+  </div>
+
+</main>
+
+<script>
+  function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+</script>
+
+</body>
+</html>

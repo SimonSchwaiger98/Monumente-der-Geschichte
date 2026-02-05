@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kolosseum – Antike</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+    }
+
+    header {
+      background: #607d8b;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-family: "Comic Neue", cursive;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background: white;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .info-box {
+      background: #e7eef2;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    /* Slider */
+    .slider {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .slide {
+      display: none;
+      text-align: center;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slider-buttons {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .slider-buttons button {
+      background: #607d8b;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      margin: 0 0.2rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .slider-buttons button:hover {
+      background: #4e6672;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .map {
+      margin-top: 2rem;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      height: 650px;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-top: 1.5rem;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .back {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .back a {
+      text-decoration: none;
+      background: #607d8b;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-family: "Comic Neue", cursive;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Kolosseum</h1>
+  <p>Antike · ab 70 n. Chr. · Rom, Italien</p>
+</header>
+
+<main>
+
+  <div class="info-box">
+    Epoche: Antike <br>
+    Bauzeit: ab 70 n. Chr. <br>
+    Ort: Rom, Italien
+  </div>
+
+  <!-- Bild-Slider -->
+  <div class="slider">
+
+    <div class="slide active">
+      <img src="../../bilder/monumente/kolosseum/kolosseum_01.jpg" alt="Kolosseum heute">
+      <div class="caption">
+        Heute ist nur noch etwa ein Drittel der ursprünglichen Struktur des Kolosseums erhalten.
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/kolosseum/kolosseum_02.jpg" alt="Inneres des Kolosseums">
+      <div class="caption">
+        Im Inneren des Kolosseums erkennt man noch viele Kammern und Gänge für Zuschauer, Gladiatoren und Tiere.
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/kolosseum/kolosseum_03.jpg" alt="Gladiatorenkampf">
+      <div class="caption">
+        Nachgestelltes Foto aus Spanien: So könnten Gladiatorenkämpfe im Alten Rom ausgesehen haben.
+      </div>
+    </div>
+
+    <div class="slider-buttons">
+      <button onclick="showSlide(0)">●</button>
+      <button onclick="showSlide(1)">●</button>
+      <button onclick="showSlide(2)">●</button>
+    </div>
+  </div>
+
+  <!-- Text -->
+  <h2>1. Name, Art des Bauwerks, Größe und Lage</h2>
+  <p>
+    Das Kolosseum ist ein großes Amphitheater und steht mitten in der Stadt Rom, der heutigen Hauptstadt von Italien.
+    Zur Zeit seiner Erbauung lag es im Zentrum des Römischen Reiches.
+  </p>
+  <p>
+    Es ist etwa 189 Meter lang, 156 Meter breit und rund 48 Meter hoch. Das Bauwerk hatte Platz für bis zu
+    50.000 Zuschauer und bestand aus Stein, Ziegeln, Beton und vulkanischem Gestein.
+  </p>
+
+  <h2>2. Epoche, Bauzeit und Erbauer</h2>
+  <p>
+    Das Kolosseum gehört zur Epoche der Antike. Mit dem Bau wurde um 70 n. Chr. begonnen.
+    Auftraggeber war Kaiser Vespasian, fertiggestellt wurde es 80 n. Chr. unter seinem Sohn Titus.
+  </p>
+  <p>
+    Tausende Arbeiter waren am Bau beteiligt. Die Römer nutzten ihr großes Wissen über Bögen, Gewölbe und Beton,
+    um dieses riesige Bauwerk zu errichten.
+  </p>
+
+  <h2>3. Nutzung und Bedeutung früher und heute</h2>
+  <p>
+    In der Antike fanden im Kolosseum Gladiatorenkämpfe, Tierhetzen und andere Schauspiele statt.
+    Der Eintritt war oft kostenlos, denn die Spiele sollten das Volk unterhalten.
+  </p>
+  <p>
+    Unter der Arena befand sich das Hypogäum – ein unterirdisches Gangsystem mit Käfigen und Aufzügen.
+    Heute ist das Kolosseum eine weltberühmte Ruine und ein Symbol des Alten Roms.
+  </p>
+
+  <h2>4. Spannende Fakten und Funde</h2>
+  <p>
+    Archäologen fanden Eintrittskarten, Graffiti und Überreste von Tieren. Gladiatoren waren echte Stars,
+    deren Bilder auf Alltagsgegenständen zu sehen waren.
+  </p>
+  <p>
+    Durch viele Eingänge konnten die Zuschauer das Stadion schnell betreten und verlassen.
+    Heute besuchen jedes Jahr Millionen Menschen das Kolosseum.
+  </p>
+
+  <!-- Karte -->
+  <div class="map">
+    <h2>📍 Lage des Kolosseums</h2>
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=12.489%2C41.887%2C12.495%2C41.892&layer=mapnik&marker=41.8902%2C12.4922"
+      width="100%"
+      height="300"
+      style="border:1px solid #ccc;"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- Video -->
+  <h2>🎥 Video: Beton und Baukunst im Alten Rom</h2>
+  <div class="video-wrapper">
+    <iframe
+      src="https://schule.zdf.de/video/plus-schule-superbeton-100"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="back">
+    <a href="../../index.html">← Zurück zur Übersicht</a>
+  </div>
+
+</main>
+
+<script>
+  function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+</script>
+
+</body>
+</html>

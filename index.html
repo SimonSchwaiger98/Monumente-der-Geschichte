@@ -49,6 +49,35 @@
     .mittelalter { background: #6d4c41; }
     .neuzeit { background: #455a64; }
 
+/* Epochen-Header mit Bild */
+.epoche-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 1rem 0.5rem;
+}
+
+.epoche-header h2 {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  font-family: "Comic Neue", cursive;
+}
+
+/* Bild für Epoche (nicht zu klein!) */
+.epochen-bild {
+  height: 90px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .epochen-bild {
+    height: 60px;
+  }
+}
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -114,15 +143,20 @@
 
 <main>
 
-  <!-- Steinzeit -->
-  <h2 class="steinzeit">⛰️ Steinzeit</h2>
-  <div class="grid grid-steinzeit">
-    <a href="epochen/steinzeit/stonehenge.html" class="card">
-      <img src="bilder/start/steinzeit/stonehenge.jpg" alt="Stonehenge">
-      <div class="card-title">Stonehenge</div>
-      <div class="info">ca. 3000 v. Chr. · England</div>
-    </a>
-  </div>
+<!-- Steinzeit -->
+<div class="epoche-header">
+  <img src="bilder/epochen/steinzeit.png" alt="Steinzeit" class="epochen-bild">
+  <h2 class="steinzeit">Steinzeit</h2>
+</div>
+
+<div class="grid grid-steinzeit">
+  <a href="epochen/steinzeit/stonehenge.html" class="card">
+    <img src="bilder/start/steinzeit/stonehenge.jpg" alt="Stonehenge">
+    <div class="card-title">Stonehenge</div>
+    <div class="info">ca. 3000 v. Chr. · England</div>
+  </a>
+</div>
+
 
   <!-- Altes Ägypten -->
   <h2 class="aegypten">🏺 Altes Ägypten</h2>
@@ -217,6 +251,7 @@
 </body>
 
 </html>
+
 
 
 

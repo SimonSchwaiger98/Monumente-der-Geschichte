@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grab des Tutanchamun – Altes Ägypten</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+    }
+
+    header {
+      background: #c9a227;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-family: "Comic Neue", cursive;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background: white;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .info-box {
+      background: #f6f0d8;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    /* Slider */
+    .slider {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .slide {
+      display: none;
+      text-align: center;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slider-buttons {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .slider-buttons button {
+      background: #c9a227;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      margin: 0 0.2rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .slider-buttons button:hover {
+      background: #a98a1f;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .map {
+      margin-top: 2rem;
+    }
+
+    /* Video */
+    .video {
+      margin-top: 2rem;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .back {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .back a {
+      text-decoration: none;
+      background: #c9a227;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-family: "Comic Neue", cursive;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Grab des Tutanchamun</h1>
+  <p>Altes Ägypten · ca. 1323 v. Chr. · Tal der Könige, Ägypten</p>
+</header>
+
+<main>
+
+  <div class="info-box">
+    Epoche: Altes Ägypten <br>
+    Bauzeit: ca. 1323 v. Chr. <br>
+    Ort: Tal der Könige, Ägypten
+  </div>
+
+  <!-- Bild-Slider -->
+  <div class="slider">
+
+    <div class="slide active">
+      <img src="../../bilder/monumente/tutanchamun/tutanchamun_01.jpg" alt="Totenmaske des Tutanchamun">
+      <div class="caption">
+        Die Totenmaske von Pharao Tutanchamun wiegt über 10 Kilogramm. Sie ist im Ägyptischen Museum in Kairo ausgestellt
+        und eines der bekanntesten Kunstobjekte der Welt. Foto: Dawid Wdowczyk
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/tutanchamun/tutanchamun_02.jpg" alt="Entdeckung der Grabkammer">
+      <div class="caption">
+        Original-Fotografie der Entdeckung der Grabkammer durch Howard Carter. Die Kammer war gefüllt mit zahlreichen
+        Grabbeigaben für das Jenseits.
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/tutanchamun/tutanchamun_03.jpg" alt="Grab im Tal der Könige">
+      <div class="caption">
+        Das Grab Tutanchamuns liegt im Tal der Könige und besteht aus vier Kammern sowie einer Eingangstreppe mit Korridor.
+      </div>
+    </div>
+
+    <div class="slider-buttons">
+      <button onclick="showSlide(0)">●</button>
+      <button onclick="showSlide(1)">●</button>
+      <button onclick="showSlide(2)">●</button>
+    </div>
+  </div>
+
+  <!-- Text -->
+  <h2>1. Wie heißt das Bauwerk, was ist es und wo befindet es sich?</h2>
+  <p>
+    Das Grab des Tutanchamun ist ein Königsgrab im Tal der Könige in Ägypten. Es handelt sich um eine Felsgrabanlage,
+    die tief in den Felsen gehauen wurde. Das Grab liegt nahe der heutigen Stadt Luxor am Westufer des Nils.
+  </p>
+  <p>
+    Im Vergleich zu anderen Königsgräbern ist es eher klein und besteht aus wenigen Räumen. Gerade diese geringe
+    Größe machte es lange Zeit schwer zu entdecken.
+  </p>
+
+  <h2>2. Epoche, Zeit und Entstehung</h2>
+  <p>
+    Das Grab stammt aus dem Alten Ägypten und gehört zur Antike. Es wurde um 1323 v. Chr. angelegt.
+    Tutanchamun war Pharao der 18. Dynastie und regierte nur wenige Jahre.
+  </p>
+  <p>
+    Da er sehr jung starb, blieb wenig Zeit für den Bau eines großen Grabes. Vermutlich war die Anlage ursprünglich
+    für eine andere Person gedacht und wurde später angepasst.
+  </p>
+
+  <h2>3. Nutzung und Bedeutung früher und heute</h2>
+  <p>
+    Das Grab diente als letzte Ruhestätte für den Pharao. Dem Glauben der alten Ägypter zufolge benötigte er im
+    Jenseits zahlreiche Gegenstände, die ihm mitgegeben wurden.
+  </p>
+  <p>
+    Erst durch seine Entdeckung in der Neuzeit wurde Tutanchamun weltberühmt.
+    Heute zählt das Grab zu den wichtigsten Fundorten der Ägyptologie.
+  </p>
+
+  <h2>4. Besondere Funde und spannende Fakten</h2>
+  <p>
+    Das Grab wurde 1922 von Howard Carter fast unberaubt entdeckt. Über 5000 Gegenstände wurden geborgen,
+    darunter die berühmte goldene Totenmaske und ein innerer Sarg aus massivem Gold.
+  </p>
+  <p>
+    Diese Funde liefern bis heute wertvolle Einblicke in Kunst, Religion und Alltag des Alten Ägypten.
+  </p>
+
+  <!-- Karte -->
+  <div class="map">
+    <h2>📍 Lage des Grabes von Tutanchamun</h2>
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=32.596%2C25.734%2C32.616%2C25.744&layer=mapnik&marker=25.7392%2C32.6014"
+      width="100%"
+      height="300"
+      style="border:1px solid #ccc;"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- Video -->
+  <div class="video">
+    <h2>🎬 Video: Die Grabstätte des Tutanchamun</h2>
+    <div class="video-wrapper">
+      <iframe
+        src="https://schule.zdf.de/video/die-grabstaette-des-tutanchamun-creative-commons-clip-100"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <div class="back">
+    <a href="../../index.html">← Zurück zur Übersicht</a>
+  </div>
+
+</main>
+
+<script>
+  function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hagia Sophia – Antike</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+    }
+
+    header {
+      background: #607d8b; /* Antike */
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-family: "Comic Neue", cursive;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background: white;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .info-box {
+      background: #e7eef2;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    /* Slider */
+    .slider {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .slide {
+      display: none;
+      text-align: center;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slider-buttons {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .slider-buttons button {
+      background: #607d8b;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      margin: 0 0.2rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .slider-buttons button:hover {
+      background: #4e6672;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .map {
+      margin-top: 2rem;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      height: 650px;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-top: 1.5rem;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .back {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .back a {
+      text-decoration: none;
+      background: #607d8b;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-family: "Comic Neue", cursive;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Hagia Sophia</h1>
+  <p>Antike · ab 532 n. Chr. · Istanbul, Türkei</p>
+</header>
+
+<main>
+
+  <div class="info-box">
+    Epoche: Antike <br>
+    Bauzeit: ab 532 n. Chr. <br>
+    Ort: Istanbul, Türkei
+  </div>
+
+  <!-- Bild-Slider -->
+  <div class="slider">
+
+    <div class="slide active">
+      <img src="../../bilder/monumente/hagiasophia/hagiasophia_01.jpg" alt="Hagia Sophia in Istanbul">
+      <div class="caption">
+        Die Hagia Sophia liegt im ältesten Teil Istanbuls. In ihrer Geschichte war sie Kirche, Moschee und Museum.
+        Foto: Arild Vågen
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/hagiasophia/hagiasophia_02.jpg" alt="Innenraum der Hagia Sophia">
+      <div class="caption">
+        Der riesige Innenraum wird von einer gewaltigen Kuppel überspannt. Zu sehen sind christliche Mosaike,
+        osmanische Kunst und islamische Kalligrafie.
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/hagiasophia/hagiasophia_03.jpg" alt="Byzantinisches Mosaik">
+      <div class="caption">
+        Byzantinisches Mosaik mit Kaisern neben der Jungfrau Maria und dem Jesuskind.
+        Foto: kanakari
+      </div>
+    </div>
+
+    <div class="slider-buttons">
+      <button onclick="showSlide(0)">●</button>
+      <button onclick="showSlide(1)">●</button>
+      <button onclick="showSlide(2)">●</button>
+    </div>
+  </div>
+
+  <!-- Text -->
+  <h2>1. Was ist die Hagia Sophia und wo befindet sie sich?</h2>
+  <p>
+    Die Hagia Sophia ist ein sehr großes und berühmtes religiöses Bauwerk in Istanbul, im ältesten Teil der Stadt.
+    Früher hieß Istanbul Konstantinopel.
+  </p>
+  <p>
+    Besonders bekannt ist das Gebäude für seine riesige Kuppel, deren höchster Punkt etwa 55 Meter über dem Boden liegt.
+    Trotz ihres hohen Alters wirkt die Hagia Sophia innen hell und weitläufig.
+  </p>
+
+  <h2>2. Epoche, Bauzeit und Erbauer</h2>
+  <p>
+    Die Hagia Sophia stammt aus der Antike und wurde im Byzantinischen Reich erbaut. Der Bau begann 532 n. Chr.
+    und war bereits 537 n. Chr. abgeschlossen.
+  </p>
+  <p>
+    Auftraggeber war Kaiser Justinian I., der die größte und prächtigste Kirche der christlichen Welt errichten wollte.
+    Tausende Arbeiter und Künstler waren beteiligt.
+  </p>
+
+  <h2>3. Nutzung und Bedeutung früher und heute</h2>
+  <p>
+    Ursprünglich war die Hagia Sophia eine christliche Kirche und das religiöse Zentrum des Byzantinischen Reiches.
+    Nach der Eroberung Konstantinopels 1453 wurde sie zur Moschee.
+  </p>
+  <p>
+    Heute wird sie wieder als Moschee genutzt, ist aber weiterhin für Besucher geöffnet
+    und ein Symbol für die wechselvolle Geschichte Istanbuls.
+  </p>
+
+  <h2>4. Spannende Besonderheiten und Kunstwerke</h2>
+  <p>
+    Im Inneren finden sich byzantinische Mosaike und große islamische Schriftzeichen nebeneinander.
+    Diese einzigartige Mischung aus christlicher und islamischer Kunst ist weltweit einmalig.
+  </p>
+  <p>
+    Die Hagia Sophia zeigt eindrucksvoll, wie sich Religion, Kunst und Geschichte über viele Jahrhunderte verändern können.
+  </p>
+
+  <!-- Karte -->
+  <div class="map">
+    <h2>📍 Lage der Hagia Sophia</h2>
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=28.978%2C41.005%2C28.986%2C41.010&layer=mapnik&marker=41.0086%2C28.9802"
+      width="100%"
+      height="300"
+      style="border:1px solid #ccc;"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- Video -->
+  <h2>🎥 Video: Die Hagia Sophia in Istanbul</h2>
+  <div class="video-wrapper">
+    <iframe
+      src="https://schule.zdf.de/video/hagia-sophia-istanbul-creative-commons-clip-100"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="back">
+    <a href="../../index.html">← Zurück zur Übersicht</a>
+  </div>
+
+</main>
+
+<script>
+  function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+</script>
+
+</body>
+</html>

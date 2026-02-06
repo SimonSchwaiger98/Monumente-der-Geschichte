@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akropolis von Athen – Antike</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+    }
+
+    header {
+      background: #607d8b;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-family: "Comic Neue", cursive;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background: white;
+    }
+
+    .info-box {
+      background: #e6eef2;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    /* Slider */
+    .slider {
+      margin-bottom: 1.5rem;
+    }
+
+    .slide {
+      display: none;
+      text-align: center;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .slider-buttons {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .slider-buttons button {
+      background: #607d8b;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      margin: 0 0.2rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .map {
+      margin-top: 2rem;
+    }
+
+    .back {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .back a {
+      text-decoration: none;
+      background: #607d8b;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-family: "Comic Neue", cursive;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Akropolis von Athen</h1>
+  <p>Antike · ca. 5. Jahrhundert v. Chr. · Athen, Griechenland</p>
+</header>
+
+<main>
+
+  <div class="info-box">
+    Epoche: Antike <br>
+    Bauzeit: ca. 5. Jahrhundert v. Chr. <br>
+    Ort: Athen, Griechenland
+  </div>
+
+  <!-- Bild-Slider -->
+  <div class="slider">
+
+    <div class="slide active">
+      <img src="../../bilder/monumente/akropolis/akropolis_01.jpg" alt="Akropolis von Athen heute">
+      <div class="caption">
+        Die Akropolis von Athen heute. Auf dem hohen Felsen stehen noch die Reste der alten Tempel aus der Zeit der Antike.
+        Besonders gut sichtbar ist der Parthenon, ein antiker Marmortempel, welcher der Namensgeberin der Stadt Athen geweiht ist.
+        (Foto: George E. Koronaios)
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/akropolis/akropolis_02.jpg" alt="Akropolis um 500 v. Chr.">
+      <div class="caption">
+        So könnte die Akropolis von Athen vor etwa 2 500 Jahren ausgesehen haben.
+        Die Zeichnung zeigt Tempel und Gebäude, wie sie um 500 v. Chr. auf dem Burgberg standen.
+        (Bild: KI)
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/akropolis/akropolis_03.jpg" alt="Erechtheion auf der Akropolis">
+      <div class="caption">
+        Das Erechtheion auf der Akropolis. Dieser Tempel wurde vor über 2 400 Jahren gebaut.
+        Berühmt sind die Figuren von Frauen, die das Dach tragen.
+      </div>
+    </div>
+
+    <div class="slider-buttons">
+      <button onclick="showSlide(0)">●</button>
+      <button onclick="showSlide(1)">●</button>
+      <button onclick="showSlide(2)">●</button>
+    </div>
+
+  </div>
+
+  <!-- Text -->
+  <h2>1. Name, Art des Bauwerks, Größe und Lage</h2>
+  <p>
+    Die Akropolis von Athen ist eine Tempel- und Festungsanlage aus der Antike.
+    Das Wort „Akropolis“ bedeutet übersetzt „oberste Stadt“.
+    Sie liegt auf einem hohen, flachen Felsen mitten in der Stadt Athen in Griechenland.
+  </p>
+
+  <p>
+    Der Felsen der Akropolis ist etwa 156 Meter hoch und war leicht zu verteidigen.
+    Auf ihm stehen mehrere berühmte Bauwerke, vor allem Tempel.
+    Das bekannteste Gebäude ist der Parthenon, der der Göttin Athene geweiht war.
+    Von der Akropolis aus hat man einen weiten Blick über ganz Athen – früher wie heute.
+  </p>
+
+  <h2>2. Epoche, Bauzeit und Erbauer</h2>
+  <p>
+    Die Akropolis gehört zur Epoche der Antike.
+    Die wichtigsten Tempel wurden im 5. Jahrhundert v. Chr. gebaut, also vor etwa 2500 Jahren.
+    Diese Zeit gilt als die Blütezeit des antiken Athens.
+  </p>
+
+  <p>
+    Der Ausbau der Akropolis geschah unter dem Staatsmann Perikles.
+    Viele Künstler, Bildhauer und Baumeister arbeiteten gemeinsam an den Gebäuden.
+    Der Parthenon wurde von den Architekten Iktinos und Kallikrates entworfen.
+  </p>
+
+  <p>
+    Die Bauwerke bestehen größtenteils aus hellem Marmor,
+    der aus Steinbrüchen in der Nähe von Athen stammte.
+    Die schweren Steine wurden mühsam den steilen Felsen hinaufgebracht.
+    Trotz einfacher Werkzeuge gelang es den Griechen,
+    sehr genaue und harmonische Gebäude zu errichten.
+  </p>
+
+  <h2>3. Nutzung und Bedeutung früher und heute</h2>
+  <p>
+    In der Antike war die Akropolis das religiöse Zentrum Athens.
+    Die Tempel dienten der Verehrung der Stadtgöttin Athene,
+    die als Göttin der Weisheit und des Krieges galt.
+    Im Parthenon stand eine riesige Statue der Athene aus Gold und Elfenbein.
+  </p>
+
+  <p>
+    Die Akropolis war aber nicht nur ein religiöser Ort.
+    Sie zeigte auch den Reichtum und die Macht Athens.
+    Feste, Umzüge und Opfergaben fanden hier statt.
+  </p>
+
+  <p>
+    Im Laufe der Jahrhunderte änderte sich die Nutzung:
+    Der Parthenon war zeitweise Kirche, später Moschee.
+    Kriege, Explosionen und Erdbeben beschädigten viele Gebäude schwer.
+  </p>
+
+  <p>
+    Heute ist die Akropolis eine Ruinenstätte und gehört zum Weltkulturerbe.
+    Sie ist eines der wichtigsten Zeugnisse der Antike
+    und wird von Millionen Menschen aus aller Welt besucht.
+  </p>
+
+  <h2>4. Besondere Bauwerke und spannende Details</h2>
+  <p>
+    Neben dem Parthenon gibt es weitere bedeutende Bauwerke auf der Akropolis.
+    Dazu gehört das Erechtheion, das für seine Statuen berühmt ist.
+    Das Dach des Tempels wird von steinernen Frauenfiguren (Karyatiden) getragen.
+  </p>
+
+  <p>
+    Die Originale stehen heute in Museen,
+    auf der Akropolis sieht man Nachbildungen.
+    Ein weiteres Bauwerk sind die Propyläen,
+    das große Eingangstor zur Akropolis.
+  </p>
+
+  <p>
+    Außerdem gab es Tempel für die Siegesgöttin Nike
+    und Theater an den Hängen des Felsens,
+    zum Beispiel das Dionysos-Theater,
+    eines der ältesten Theater der Welt.
+  </p>
+
+  <p>
+    Die Akropolis zeigt bis heute,
+    wie hoch entwickelt die Kunst, Architektur und Religion
+    im antiken Griechenland waren –
+    und warum diese Epoche unsere Geschichte stark geprägt hat.
+  </p>
+
+  <!-- Karte -->
+  <div class="map">
+    <h2>📍 Lage der Akropolis von Athen</h2>
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=23.7165%2C37.9675%2C23.7365%2C37.9875&layer=mapnik&marker=37.9715%2C23.7267"
+      width="100%"
+      height="300"
+      style="border:1px solid #ccc;"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="back">
+    <a href="../../index.html">← Zurück zur Übersicht</a>
+  </div>
+
+</main>
+
+<script>
+  function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+</script>
+
+</body>
+</html>

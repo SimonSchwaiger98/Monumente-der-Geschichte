@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tower of London – Mittelalter</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+    }
+
+    header {
+      background: #6d4c41;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-family: "Comic Neue", cursive;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background: white;
+    }
+
+    .info-box {
+      background: #efe4e0;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .slider {
+      margin-bottom: 1.5rem;
+    }
+
+    .slide {
+      display: none;
+      text-align: center;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .slider-buttons {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .slider-buttons button {
+      background: #6d4c41;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      margin: 0 0.2rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .map {
+      margin-top: 2rem;
+    }
+
+    .back {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .back a {
+      text-decoration: none;
+      background: #6d4c41;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-family: "Comic Neue", cursive;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Tower of London</h1>
+  <p>Mittelalter · ab 1066 n. Chr. · London, England</p>
+</header>
+
+<main>
+
+  <div class="info-box">
+    Epoche: Mittelalter <br>
+    Bauzeit: ab 1066 n. Chr. <br>
+    Ort: London, England
+  </div>
+
+  <!-- Bild-Slider -->
+  <div class="slider">
+
+    <div class="slide active">
+      <img src="../../bilder/monumente/tower/tower_01.jpg" alt="Tower of London am Fluss Themse">
+      <div class="caption">
+        Der Tower of London liegt direkt am Fluss Themse.
+        Sein höchster Turm ist der White Tower (deutsch: weißer Turm),
+        der aus Kalkstein gebaut wurde.
+        (Foto: Bob Collowan)
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/tower/tower_02.jpg" alt="Kronjuwelen Großbritanniens">
+      <div class="caption">
+        Die Kronjuwelen von Großbritannien sind wertvolle Schmuckstücke
+        und die Insignien des englischen Königshauses.
+        Sie werden sicher im Tower of London aufbewahrt.
+        Die große Krone der Kronjuwelen wurde zuletzt für die Krönung
+        von König Charles III im Jahr 2023 genutzt.
+        (Foto: United Kingdom Government)
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/tower/tower_03.jpg" alt="Beefeater am Traitors’ Gate">
+      <div class="caption">
+        Ein Beefeater (deutsch: Fleischesser) – das ist der Spitzname
+        für die „Yeomen Warder“ des königlichen Palastes und der Festung,
+        dem Tower of London.
+        Sie kennen sich gut mit der Geschichte des Towers aus.
+        Auf diesem Bild erklärt ein Beefeater die Geschichte des „Traitors’ Gate“,
+        also des „Tors der Verräter“, durch das früher Gefangene in den Tower gebracht wurden.
+      </div>
+    </div>
+
+    <div class="slider-buttons">
+      <button onclick="showSlide(0)">●</button>
+      <button onclick="showSlide(1)">●</button>
+      <button onclick="showSlide(2)">●</button>
+    </div>
+
+  </div>
+
+  <!-- Text -->
+  <h2>1. Name, Art des Bauwerks, Größe und Lage</h2>
+  <p>
+    Der Tower of London ist eine berühmte Burg- und Festungsanlage in London,
+    der Hauptstadt des Vereinigtes Königreich.
+  </p>
+
+  <p>
+    Er liegt direkt an der Themse und besteht aus mehreren Mauerringen,
+    Türmen und Gebäuden.
+    Das älteste und wichtigste Gebäude ist der White Tower,
+    ein großer, rechteckiger Steinturm in der Mitte der Anlage.
+  </p>
+
+  <p>
+    Der Tower ist fast 1.000 Jahre alt
+    und war früher von breiten Wassergräben umgeben.
+    Heute gehört er zu den bekanntesten Sehenswürdigkeiten Großbritanniens
+    und zieht jedes Jahr Millionen Besucher an.
+  </p>
+
+  <h2>2. Epoche, Bauzeit und Erbauer</h2>
+  <p>
+    Der Tower stammt aus dem Mittelalter.
+    Er wurde im Jahr 1066 n. Chr. von Wilhelm der Eroberer in Auftrag gegeben.
+    Wilhelm war ein normannischer Herzog, der England erobert hatte.
+  </p>
+
+  <p>
+    Mit dem Bau wollte er seine Macht sichern
+    und zeigen, dass nun ein neuer König über England herrschte.
+    Der White Tower wurde aus hellem Stein errichtet
+    und war ein deutliches Zeichen königlicher Stärke.
+  </p>
+
+  <p>
+    Im Laufe der Jahrhunderte wurde die Anlage immer weiter ausgebaut.
+    Neue Mauern, Türme und Tore kamen hinzu.
+    So entstand eine starke Festung, die Angriffe abwehren konnte.
+  </p>
+
+  <h2>3. Nutzung und Bedeutung früher und heute</h2>
+  <p>
+    Der Tower hatte im Mittelalter viele Aufgaben.
+    Zuerst war er eine königliche Residenz,
+    später wurde er auch als Gefängnis genutzt.
+    Besonders berühmte Gefangene waren Anne Boleyn,
+    die zweite Ehefrau von Heinrich VIII.,
+    und Guy Fawkes, der einen Anschlag auf das Parlament plante.
+  </p>
+
+  <p>
+    Außerdem diente der Tower als Waffenlager,
+    Münzstätte und sogar als Zoo,
+    in dem exotische Tiere gehalten wurden.
+  </p>
+
+  <p>
+    Heute ist der Tower ein Museum und Weltkulturerbe.
+    Besucher können die alten Mauern besichtigen
+    und viel über die Geschichte Englands erfahren.
+  </p>
+
+  <h2>4. Kronjuwelen, Beefeaters und die Raben-Legende</h2>
+  <p>
+    Ein besonderer Schatz im Tower sind die Kronjuwelen.
+    Sie werden in einer gut gesicherten Schatzkammer aufbewahrt.
+    Zu ihnen gehören Kronen, Zepter und andere königliche Insignien
+    mit Tausenden Edelsteinen.
+    Sie werden noch heute bei Krönungen verwendet.
+  </p>
+
+  <p>
+    Die Wächter des Towers heißen Yeoman Warders,
+    besser bekannt als Beefeaters.
+    In ihren roten Uniformen führen sie Besucher durch die Anlage
+    und erzählen spannende Geschichten aus der Vergangenheit.
+  </p>
+
+  <p>
+    Berühmt sind auch die Raben des Towers.
+    Einer alten Legende nach wird das Königreich untergehen,
+    wenn die Raben den Tower verlassen.
+    Deshalb leben dort immer mindestens sechs Raben,
+    die gut versorgt werden.
+  </p>
+
+  <p>
+    Der Tower of London ist damit nicht nur eine alte Burg,
+    sondern ein Ort voller Geschichte, Geheimnisse und Legenden –
+    ein echtes Symbol des Mittelalters.
+  </p>
+
+  <!-- Karte -->
+  <div class="map">
+    <h2>📍 Lage des Tower of London</h2>
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-0.084%2C51.503%2C-0.069%2C51.512&layer=mapnik&marker=51.5081%2C-0.0759"
+      width="100%"
+      height="300"
+      style="border:1px solid #ccc;"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="back">
+    <a href="../../index.html">← Zurück zur Übersicht</a>
+  </div>
+
+</main>
+
+<script>
+  function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+</script>
+
+</body>
+</html>

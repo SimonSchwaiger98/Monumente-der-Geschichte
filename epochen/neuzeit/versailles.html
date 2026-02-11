@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schloss Versailles – Neuzeit</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+    }
+
+    header {
+      background: #455a64;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-family: "Comic Neue", cursive;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background: white;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .info-box {
+      background: #e3ecef;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    /* Slider */
+    .slider {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .slide {
+      display: none;
+      text-align: center;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slider-buttons {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .slider-buttons button {
+      background: #455a64;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      margin: 0 0.2rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .slider-buttons button:hover {
+      background: #2f3e44;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .map {
+      margin-top: 2rem;
+    }
+
+    .back {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .back a {
+      text-decoration: none;
+      background: #455a64;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-family: "Comic Neue", cursive;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Schloss Versailles</h1>
+  <p>Neuzeit · 17. Jahrhundert · Versailles, Frankreich</p>
+</header>
+
+<main>
+
+  <div class="info-box">
+    Epoche: Neuzeit <br>
+    Bauzeit: ab ca. 1661 n. Chr. <br>
+    Ort: Versailles, Frankreich
+  </div>
+
+  <!-- Slider -->
+  <div class="slider">
+
+    <div class="slide active">
+      <img src="../../bilder/monumente/versailles/versailles_01.jpg" alt="Cour de Marbre">
+      <div class="caption">
+        Der Marmorin­nenhof (Cour de Marbre) ist das Herz des Schlosses. Von hier aus betrat Ludwig XIV. seine prunkvollen Gemächer – der Innenhof zeigt noch Teile des ursprünglichen Jagdschlosses. (Foto: Luis Miguel Bugallo Sánchez)
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/versailles/versailles_02.jpg" alt="Spiegelsaal">
+      <div class="caption">
+        Der berühmte Spiegelsaal ist 73 Meter lang und mit 357 Spiegeln ausgestattet. Hier fanden Feste, Empfänge und wichtige historische Ereignisse statt. (Foto: Myrabella)
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/versailles/versailles_03.jpg" alt="Statue Ludwig XIV">
+      <div class="caption">
+        Statue von Ludwig XIV., dem „Sonnenkönig“. Er ließ Versailles zu einem gewaltigen Palast ausbauen und machte ihn 1682 zum politischen Zentrum Frankreichs. (Foto: Petronela Cretu)
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/versailles/versailles_04.jpg" alt="Gärten von Versailles">
+      <div class="caption">
+        Die Orangerie und die weitläufigen Gärten von Versailles zeigen die strenge Symmetrie und Pracht der barocken Gartenkunst mit Brunnen, Alleen und exotischen Pflanzen. (Foto: Urban)
+      </div>
+    </div>
+
+    <div class="slider-buttons">
+      <button onclick="showSlide(0)">●</button>
+      <button onclick="showSlide(1)">●</button>
+      <button onclick="showSlide(2)">●</button>
+      <button onclick="showSlide(3)">●</button>
+    </div>
+
+  </div>
+
+  <!-- TEXT (unverändert übernommen) -->
+
+  <h2>1) Ein riesiger Königspalast in Frankreich</h2>
+  <p>
+    Das Schloss Versailles ist ein prachtvoller Königspalast in der Stadt Versailles, etwa 20 Kilometer südwestlich von Paris in Frankreich. Es gehört zu den berühmtesten Schlössern der Welt und ist ein Symbol für Reichtum und Macht.
+  </p>
+  <p>
+    Ursprünglich war Versailles nur ein kleines Jagdschloss. Doch es wurde zu einem riesigen Palast ausgebaut. Heute umfasst die gesamte Anlage mehr als 700 Räume. Besonders berühmt ist der Spiegelsaal, der 73 Meter lang ist und mit 357 Spiegeln geschmückt wurde. Zur Anlage gehören außerdem riesige Gartenflächen mit Brunnen, Statuen und breiten Alleen. Die Gärten erstrecken sich über hunderte Hektar.
+  </p>
+  <p>
+    Das Schloss beeindruckt durch goldene Verzierungen, große Fensterfronten, Marmorsäle und reich geschmückte Decken. Alles sollte zeigen: Hier wohnt einer der mächtigsten Könige Europas.
+  </p>
+
+  <h2>2) Bau in der Neuzeit – Der Sonnenkönig verwirklicht seinen Traum</h2>
+  <p>
+    Das Schloss gehört zur Epoche der Neuzeit. Der große Umbau begann im 17. Jahrhundert. Ab etwa 1661 ließ König Ludwig XIV. das alte Jagdschloss Schritt für Schritt in einen riesigen Palast verwandeln. Mehr als 40 Jahre lang wurde gebaut, erweitert und verschönert.
+  </p>
+  <p>
+    1682 verlegte Ludwig XIV. seinen Regierungssitz nach Versailles. Von hier aus regierte er ganz Frankreich. Der König wurde auch „Sonnenkönig“ genannt, weil sich – wie die Planeten um die Sonne – alles um ihn drehen sollte.
+  </p>
+  <p>
+    Viele berühmte Architekten und Künstler arbeiteten an dem Schloss, darunter Jules Hardouin-Mansart. Tausende Handwerker waren beteiligt. Es wurden kostbare Materialien wie Marmor, Gold, Seide und edle Hölzer verwendet. Auch die riesigen Gartenanlagen mit über 50 Brunnen wurden kunstvoll geplant. Alles war streng symmetrisch angeordnet – ein Zeichen von Ordnung und Macht.
+  </p>
+
+  <h2>3) Leben im Schloss – Regierungssitz und Bühne der Macht</h2>
+  <p>
+    Versailles war nicht nur ein Wohnort, sondern das politische Zentrum Frankreichs. Der König lebte hier mit seiner Familie – aber auch mit Hunderten von Adligen, Dienern und Hofbeamten.
+  </p>
+  <p>
+    Der Tagesablauf des Königs folgte einem genauen Plan. Selbst das morgendliche Aufstehen, das sogenannte Lever, war eine öffentliche Zeremonie. Adlige durften dabei zuschauen – es galt als große Ehre.
+  </p>
+  <p>
+    Im Schloss fanden große Feste, Bälle und Empfänge statt. Der Spiegelsaal wurde für wichtige Zeremonien genutzt. Alles war darauf ausgelegt, den Reichtum und die Macht des Königs zu zeigen.
+  </p>
+  <p>
+    Nach der Französischen Revolution im Jahr 1789 verlor Versailles seine Funktion als Königssitz. Heute ist das Schloss ein Museum und UNESCO-Weltkulturerbe. Millionen Menschen besuchen es jedes Jahr.
+  </p>
+
+  <h2>4) Glanz, Spiegel und geheime Details</h2>
+  <p>
+    Eine der bekanntesten Besonderheiten ist der Spiegelsaal. Im 17. Jahrhundert waren Spiegel sehr teuer und selten. 357 Spiegel in einem Raum waren deshalb ein unglaublicher Luxus.
+  </p>
+  <p>
+    Auch die königlichen Gemächer waren prunkvoll ausgestattet. Das Prunkbett Ludwigs XIV. war mit Brokatstoffen in Gold und Rot verziert. Möbel trugen sein königliches Monogramm. Sogar Alltagsgegenstände waren kostbar geschmückt.
+  </p>
+  <p>
+    Im Schloss und in den Gärten findet man immer wieder Sonnensymbole – ein Hinweis auf den „Sonnenkönig“. In den riesigen Stallungen waren zeitweise bis zu 600 Pferde untergebracht.
+  </p>
+  <p>
+    Schloss Versailles ist bis heute ein beeindruckendes Beispiel dafür, wie Architektur Macht zeigen kann.
+  </p>
+
+  <!-- Karte -->
+  <div class="map">
+    <h2>📍 Lage von Schloss Versailles</h2>
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=2.1106%2C48.7932%2C2.1406%2C48.8132&layer=mapnik&marker=48.8049%2C2.1204"
+      width="100%"
+      height="300"
+      style="border:1px solid #ccc;"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="back">
+    <a href="../../index.html">← Zurück zur Übersicht</a>
+  </div>
+
+</main>
+
+<script>
+  function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+</script>
+
+</body>
+</html>

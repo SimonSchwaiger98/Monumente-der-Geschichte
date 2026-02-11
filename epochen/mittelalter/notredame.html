@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notre-Dame de Paris – Mittelalter</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+    }
+
+    header {
+      background: #6d4c41;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-family: "Comic Neue", cursive;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background: white;
+    }
+
+    .info-box {
+      background: #efe4e0;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .slider {
+      margin-bottom: 1.5rem;
+    }
+
+    .slide {
+      display: none;
+      text-align: center;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .slider-buttons {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .slider-buttons button {
+      background: #6d4c41;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      margin: 0 0.2rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .map {
+      margin-top: 2rem;
+    }
+
+    .back {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .back a {
+      text-decoration: none;
+      background: #6d4c41;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-family: "Comic Neue", cursive;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Notre-Dame de Paris</h1>
+  <p>Mittelalter · 1163–14. Jahrhundert · Paris, Frankreich</p>
+</header>
+
+<main>
+
+  <div class="info-box">
+    Epoche: Mittelalter <br>
+    Bauzeit: 1163–14. Jahrhundert <br>
+    Ort: Paris, Frankreich
+  </div>
+
+  <!-- Bild-Slider -->
+  <div class="slider">
+
+    <div class="slide active">
+      <img src="../../bilder/monumente/notredame/notredame_01.jpg" alt="Notre-Dame auf der Île de la Cité">
+      <div class="caption">
+        Die Kathedrale steht auf einer kleinen Insel, der Île de la Cité,
+        umgeben vom Fluss Seine, der direkt durch Paris fließt.
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/notredame/notredame_02.jpg" alt="Fenster und Wasserspeier">
+      <div class="caption">
+        Besonders bekannt ist die Kathedrale für ihre detailreichen Fenster und die Wasserspeier.
+        Sie dienen nicht nur der Dekoration, sondern sind zugleich für die Ableitung von Regenwasser da.
+        (Foto: Roland Arhelger)
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/notredame/notredame_03.jpg" alt="Brand 2019">
+      <div class="caption">
+        Am 15. April 2016 brach während Bauarbeiten ein Feuer in der Kathedrale aus,
+        das große Teile des Bauwerks zerstörte.
+        Dank der schnellen Restaurierung ist die Kirche heute fast wieder vollständig im ursprünglichen Zustand.
+        (Foto: GodefroyParis)
+      </div>
+    </div>
+
+    <div class="slider-buttons">
+      <button onclick="showSlide(0)">●</button>
+      <button onclick="showSlide(1)">●</button>
+      <button onclick="showSlide(2)">●</button>
+    </div>
+
+  </div>
+
+  <!-- Text -->
+  <h2>1. Name, Art des Bauwerks, Größe und Lage</h2>
+  <p>
+    Die Notre-Dame de Paris ist eine berühmte katholische Kathedrale in Paris, der Hauptstadt von Frankreich.
+    Der Name bedeutet „Unsere liebe Frau von Paris“ und ist der Jungfrau Maria gewidmet.
+  </p>
+
+  <p>
+    Die Kathedrale steht auf einer kleinen Insel mitten in der Stadt, der Île de la Cité, die vom Fluss Seine umflossen wird.
+    Sie ist im Inneren etwa 130 Meter lang und 48 Meter breit.
+    Der höchste Turm ist rund 93 Meter hoch.
+    Besonders berühmt sind die großen, runden Rosenfenster, die aus buntem Glas bestehen.
+    Wenn die Sonne hineinscheint, leuchten sie in vielen Farben.
+  </p>
+
+  <p>
+    Notre-Dame gehört zu den bekanntesten Wahrzeichen von Paris
+    und zieht jedes Jahr Millionen Besucher an.
+  </p>
+
+  <h2>2. Epoche, Bauzeit und Erbauer</h2>
+  <p>
+    Die Kathedrale stammt aus dem Mittelalter.
+    Der Bau begann im Jahr 1163 n. Chr. und dauerte fast 200 Jahre.
+    Erst im 14. Jahrhundert war das große Bauwerk vollständig fertiggestellt.
+  </p>
+
+  <p>
+    Notre-Dame ist ein Meisterwerk der gotischen Architektur.
+    Typisch für diese Bauweise sind hohe Spitzbögen, große Fenster und schlanke Türme.
+    Die Baumeister wollten die Kirche möglichst hoch bauen,
+    damit sie wie ein Finger in den Himmel zeigt.
+  </p>
+
+  <p>
+    Interessant ist, dass Notre-Dame bereits die fünfte Kirche an dieser Stelle ist.
+    Schon vorher standen dort andere christliche Gebäude.
+    Beim Bau der Kathedrale wurden sogar Steine älterer Kirchen wiederverwendet.
+  </p>
+
+  <h2>3. Nutzung und Bedeutung früher und heute</h2>
+  <p>
+    Im Mittelalter war Notre-Dame das religiöse Zentrum von Paris.
+    Hier fanden wichtige Gottesdienste, Feste und Zeremonien statt.
+    Auch berühmte Ereignisse der Geschichte ereigneten sich hier.
+    Im Jahr 1804 ließ sich Napoleon Bonaparte in Notre-Dame zum Kaiser krönen.
+  </p>
+
+  <p>
+    Während der Französischen Revolution wurde die Kathedrale stark beschädigt.
+    Viele Statuen wurden zerstört, weil man sie für französische Könige hielt.
+    Später setzte sich der Schriftsteller Victor Hugo mit seinem Roman
+    „Der Glöckner von Notre-Dame“ für die Rettung der Kirche ein.
+    Dadurch wurde sie im 19. Jahrhundert restauriert.
+  </p>
+
+  <p>
+    Im Jahr 2019 erschütterte ein großes Feuer die Welt:
+    Teile des Daches und der Vierungsturm brannten ab.
+    Viele Kunstschätze konnten gerettet werden.
+    Inzwischen wird die Kathedrale aufwendig restauriert,
+    damit sie wieder vollständig genutzt werden kann.
+  </p>
+
+  <p>
+    Heute ist Notre-Dame sowohl eine Kirche als auch ein bedeutendes Kulturdenkmal
+    und Teil des UNESCO-Weltkulturerbes.
+  </p>
+
+  <h2>4. Kunstwerke, Schätze und besondere Details</h2>
+  <p>
+    Im Inneren der Kathedrale befinden sich zahlreiche Skulpturen,
+    Gemälde und religiöse Gegenstände.
+    Besonders beeindruckend sind die farbenprächtigen Rosenfenster,
+    die biblische Geschichten darstellen.
+  </p>
+
+  <p>
+    Über dem Hauptportal befand sich früher eine Reihe von Königsfiguren.
+    Während der Revolution wurden ihre Köpfe abgeschlagen.
+    Viele dieser Köpfe entdeckte man erst im Jahr 1977 wieder –
+    heute sind sie in einem Museum ausgestellt.
+  </p>
+
+  <p>
+    Ein weiteres berühmtes Merkmal sind die Wasserspeier (Gargoyles)
+    an den Außenmauern.
+    Sie dienen nicht nur als Schmuck,
+    sondern leiten Regenwasser vom Gebäude weg.
+  </p>
+
+  <p>
+    Notre-Dame de Paris zeigt,
+    wie kunstvoll und beeindruckend die Bauwerke des Mittelalters waren –
+    und warum diese Epoche bis heute fasziniert.
+  </p>
+
+  <!-- Karte -->
+  <div class="map">
+    <h2>📍 Lage von Notre-Dame de Paris</h2>
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=2.343%2C48.848%2C2.355%2C48.858&layer=mapnik&marker=48.8530%2C2.3499"
+      width="100%"
+      height="300"
+      style="border:1px solid #ccc;"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="back">
+    <a href="../../index.html">← Zurück zur Übersicht</a>
+  </div>
+
+</main>
+
+<script>
+  function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+</script>
+
+</body>
+</html>

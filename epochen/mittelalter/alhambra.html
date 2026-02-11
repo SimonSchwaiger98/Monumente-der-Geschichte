@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alhambra – Mittelalter</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+    }
+
+    header {
+      background: #6d4c41;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-family: "Comic Neue", cursive;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      background: white;
+    }
+
+    .info-box {
+      background: #efe4e0;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .slider {
+      margin-bottom: 1.5rem;
+    }
+
+    .slide {
+      display: none;
+      text-align: center;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .slider-buttons {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .slider-buttons button {
+      background: #6d4c41;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      margin: 0 0.2rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .map {
+      margin-top: 2rem;
+    }
+
+    .back {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .back a {
+      text-decoration: none;
+      background: #6d4c41;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-family: "Comic Neue", cursive;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Alhambra</h1>
+  <p>Mittelalter · 13.–15. Jahrhundert · Granada, Spanien</p>
+</header>
+
+<main>
+
+  <div class="info-box">
+    Epoche: Mittelalter <br>
+    Bauzeit: 13.–15. Jahrhundert <br>
+    Ort: Granada, Spanien
+  </div>
+
+  <!-- Bild-Slider -->
+  <div class="slider">
+
+    <div class="slide active">
+      <img src="../../bilder/monumente/alhambra/alhambra_01.jpg" alt="Alhambra Granada">
+      <div class="caption">
+        Die Alhambra ist kein einzelnes Gebäude, sondern eine ganze Festungsanlage
+        in der spanischen Stadt Granada.
+        Der Name leitet sich von der roten Farbe des Steins her,
+        der zum Bau der Anlage verwendet wurde.
+        (Foto: Jebulon)
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/alhambra/alhambra_02.jpg" alt="Löwenbrunnen Alhambra">
+      <div class="caption">
+        Der berühmte Löwenbrunnen wurde im 14. Jahrhundert unter Sultan Muhammad V. erbaut.
+        Zwölf Marmorlöwen tragen die Brunnenschale.
+        Das ausgeklügelte Wassersystem verteilte das Wasser gleichmäßig
+        in vier Wasserkanäle des Hofes.
+        (Foto: Bejamin Smith)
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="../../bilder/monumente/alhambra/alhambra_03.jpg" alt="Muqarnas Gewölbe">
+      <div class="caption">
+        Wabenartige Gewölbe lassen die Decken in Alhambra schwerelos
+        und wie aus Spitze wirken.
+        Sie heißen Muqarnas und sind ein wichtiges Element
+        in der islamischen Architektur.
+        (Foto: Acediscovery)
+      </div>
+    </div>
+
+    <div class="slider-buttons">
+      <button onclick="showSlide(0)">●</button>
+      <button onclick="showSlide(1)">●</button>
+      <button onclick="showSlide(2)">●</button>
+    </div>
+
+  </div>
+
+  <!-- Text -->
+  <h2>1. Name, Art des Bauwerks, Größe und Lage</h2>
+  <p>
+    Die Alhambra ist eine große Palast- und Festungsanlage in der spanischen Stadt Granada.
+    Der Name „Alhambra“ stammt aus dem Arabischen und bedeutet „die Rote“.
+    Er bezieht sich auf die rötliche Farbe der Mauern, die aus Lehmziegeln und Stein bestehen.
+  </p>
+
+  <p>
+    Die Anlage liegt auf einem Hügel über der Stadt Granada.
+    Von dort aus hat man einen weiten Blick über die Umgebung und die Sierra Nevada.
+    Die Alhambra besteht aus Palästen, Höfen, Gärten, Türmen und Mauern.
+    Sie ist also kein einzelnes Gebäude, sondern eine ganze Stadtanlage.
+  </p>
+
+  <h2>2. Epoche, Bauzeit und Erbauer</h2>
+  <p>
+    Die Alhambra stammt aus dem Mittelalter.
+    Mit dem Bau wurde im 13. Jahrhundert begonnen.
+    Besonders im 14. Jahrhundert wurde sie unter den muslimischen Herrschern
+    der Nasriden-Dynastie weiter ausgebaut.
+  </p>
+
+  <p>
+    Die Sultane von Granada ließen prächtige Paläste errichten,
+    die reich mit Ornamenten, Inschriften und kunstvollen Mustern geschmückt wurden.
+    Später, nach der Eroberung Granadas durch die christlichen Könige im Jahr 1492,
+    wurden Teile der Anlage verändert und ergänzt.
+  </p>
+
+  <h2>3. Nutzung und Bedeutung früher und heute</h2>
+  <p>
+    Im Mittelalter war die Alhambra der Sitz der muslimischen Herrscher von Granada.
+    Sie diente als Residenz, Verwaltungszentrum und Festung.
+    In den Palästen lebten der Sultan und seine Familie.
+    Höfe mit Brunnen und Wasserbecken sorgten für Kühlung
+    und schufen eine ruhige, fast märchenhafte Atmosphäre.
+  </p>
+
+  <p>
+    Heute ist die Alhambra eines der bedeutendsten Bauwerke Spaniens
+    und gehört zum UNESCO-Weltkulturerbe.
+    Millionen Menschen besuchen jedes Jahr die Anlage,
+    um die kunstvollen Verzierungen und die wunderschönen Gärten zu bewundern.
+  </p>
+
+  <h2>4. Besondere Merkmale und Architektur</h2>
+  <p>
+    Besonders berühmt ist der Löwenhof mit seinem Brunnen,
+    der von zwölf Marmorlöwen getragen wird.
+    Ein ausgeklügeltes Wassersystem verteilte das Wasser
+    gleichmäßig in vier Kanäle des Hofes.
+  </p>
+
+  <p>
+    Eindrucksvoll sind auch die sogenannten Muqarnas.
+    Das sind wabenartige Gewölbe,
+    die die Decken wie aus Spitze erscheinen lassen.
+    Sie sind ein wichtiges Element der islamischen Architektur.
+  </p>
+
+  <p>
+    Die Alhambra zeigt,
+    wie hoch entwickelt Kunst, Technik und Architektur
+    im Mittelalter bereits waren –
+    besonders im islamischen Spanien.
+  </p>
+
+  <!-- Karte -->
+  <div class="map">
+    <h2>📍 Lage der Alhambra</h2>
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-3.597%2C37.173%2C-3.582%2C37.180&layer=mapnik&marker=37.1761%2C-3.5881"
+      width="100%"
+      height="300"
+      style="border:1px solid #ccc;"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="back">
+    <a href="../../index.html">← Zurück zur Übersicht</a>
+  </div>
+
+</main>
+
+<script>
+  function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+</script>
+
+</body>
+</html>
